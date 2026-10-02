@@ -15,7 +15,8 @@
 - **최신 실행물:** [DAY 2 노트북](30-ESSHealth-Day2-Modeling.ipynb), [9행 성능 표](DAY2-performance-report-batch3.csv), [실행 자료 ZIP](DAY2-노트북-실행자료.zip).
 - **최신 프로젝트 문서:** [README.md](README.md)를 사용자 제공 템플릿 순서로 작성했다. 목적·개요·실제 파일 구조·환경 설정·EDA·모델링·9행 성능·오류 분석·ESS 해석·참고문헌·팀 구성을 포함한다. 팀 정보는 미확인이라 입력란으로 남겼다.
 - **수치 기준 파일:** [DAY2-results-summary.json](DAY2-results-summary.json). README는 실제 DAY 2 결과를 반영했다. DAY 1도 설계 근거와 최신 결과를 연결하도록 갱신했고 Gap 방향을 통일했다.
-- **당장 남은 요청:** MAT 통합과 템플릿 기반 프로젝트 README 작성을 완료했다. 평가표에 맞춘 설명 보완을 완료했다. 재학습·성능 개선 실험은 진행하지 않았다.
+- **현재 Git 저장소:** https://github.com/asbazq/skala-min_project (공개, main). 로컬 체크아웃은 `/Users/jang/Documents/Codex/2026-10-01/goe/skala-min_project`. 이후 Git 수정·커밋은 이 폴더에서 한다. 최초 업로드 커밋 `6b2e1a8`의 푸시를 확인했다.
+- **당장 남은 요청:** MAT 통합·평가표 설명 보완·공개 GitHub 업로드를 완료했다. 재학습·성능 개선 실험은 진행하지 않았다.
 
 ## 1. 이 로그를 사용하는 방법
 
@@ -235,6 +236,8 @@ MAPE는 작을수록 좋다. Gap 이름은 첨부 양식을 따르되 **오차�
 | 2026-10-02 | 평가표 검토 후 문서 일관성·근거 보완 | DAY 1의 미평가 상태를 최신 결과로 갱신하고 Gap 방향 통일. 온도·IR·평균 QD의 실제 상관·결측 근거와 미검증 범위 명시. Train CV가 선택 과정임을 구분. README·DAY 1/2·참고 코드·실행 ZIP 갱신. 학습·예측·분할·모델 파일 해시 유지. |
 
 | 2026-10-02 | 공개 GitHub 저장소 생성·업로드 준비 | 사용자가 skala-min_project 공개 저장소를 지정. https://github.com/asbazq/skala-min_project 생성. 최신 산출물 35개와 .gitignore·data/README.md 준비. MAT·가상환경·임시 폴더 제외. DAY 1 재실행 캐시는 DAY 2 생성 경로를 우선 사용. |
+
+| 2026-10-02 | 공개 저장소 main 업로드 완료 | https://github.com/asbazq/skala-min_project, 공개 여부와 기본 브랜치 main 확인. 최초 커밋 6b2e1a8에 37개 파일 업로드. 이후 로그에 게시 기록 반영. RAW MAT는 제외하고 중간 결과 예시·노트북·모델·그래프·README 포함. |
 
 ## 10. 산출물과 실행 안내
 
