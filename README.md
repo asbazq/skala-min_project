@@ -30,29 +30,35 @@
 현재 프로젝트의 주요 파일 구조는 다음과 같다. 데이터 처리·특징 생성·학습 코드는 단계별로 나누어 **DAY 2 노트북 안에서 전부 확인할 수 있다.**
 
 ```text
-├── 30-ESSHealth-Day1-EDA.ipynb       # DAY 1 EDA와 초기 모델 설계 기록
-├── 30-ESSHealth-Day2-Modeling.ipynb  # MAT 읽기부터 최종 평가까지 실행
-├── DAY2-model-learning.py          # DAY 2 노트북과 같은 순서의 참고 코드
-├── DAY2-변수설명.md                 # 원자료 필드·계산 변수·모델 객체 설명
-├── DAY2-learning/                  # 노트북 실행 중 생성하는 결과
-│   ├── three_batches_eda_data.json.gz
-│   ├── data_audit.csv
+skala-min_project/
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── data/
+│   └── README.md                       # MAT 원자료 준비 안내
+├── notebooks/
+│   ├── 30-ESSHealth-Day1-EDA.ipynb      # EDA·설계 근거
+│   └── 30-ESSHealth-Day2-Modeling.ipynb # MAT부터 학습·평가까지
+├── src/
+│   └── DAY2-model-learning.py          # DAY 2와 같은 참고 코드
+├── results/
+│   ├── figures/                       # EDA·모델·평가 그래프
 │   ├── cell_features.csv
 │   ├── DAY2-split-manifest.csv
 │   ├── candidate-results.csv
-│   ├── best-model.joblib
 │   ├── evaluation-predictions.csv
 │   ├── performance-report.csv
-│   └── verification.json
-├── DAY2-performance-report-batch3.csv
-├── DAY2-results-summary.json       # 이전 실행과의 선택적 비교용 기록
-├── DAY2-requirements.txt
-├── DAY2-README.md                  # 상세 실행 안내
-├── PROJECT_LOG.md                  # 단계·결정·가정·맥락 기록
-└── README.md
+│   ├── DAY2-performance-report-batch3.csv
+│   ├── best-model.joblib
+│   ├── three_batches_eda_data.json.gz
+│   └── ...                            # 설정·통계·검증 기록
+└── docs/
+    ├── DAY2-README.md                  # 실행 안내
+    ├── DAY2-변수설명.md                # 변수 사전
+    └── PROJECT_LOG.md                 # 단계·결정·맥락 기록
 ```
 
-CSV·GZ·분할 목록은 별도로 준비해야 하는 입력이 아니다. **MAT 세 파일을 읽어 이 노트북에서 생성하는 중간 결과**다. 원자료는 용량이 커서 실행 자료 ZIP에 포함하지 않는다.
+CSV·GZ·분할 목록은 별도로 준비해야 하는 입력이 아니다. **MAT 세 파일을 읽어 이 노트북에서 생성하는 중간 결과**다. 원자료 MAT는 저장소에 포함하지 않는다. 실행 중 생성하는 CSV·GZ·모델은 results/, 그래프는 results/figures/에 저장한다.
 
 ## 환경 설정
 
@@ -63,7 +69,7 @@ git clone https://github.com/asbazq/skala-min_project.git
 cd skala-min_project
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r DAY2-requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 다음 원자료 세 파일을 준비하고, DAY 2 노트북 **1-1의 `RAW_DIR`**을 해당 폴더로 설정한다.
@@ -80,13 +86,13 @@ python -m pip install -r DAY2-requirements.txt
 /Users/jang/Documents/data-science/skala-ds/90-MiniProject/data/data-30
 ```
 
-Jupyter 또는 VS Code에서 [DAY 2 노트북](30-ESSHealth-Day2-Modeling.ipynb)을 열고 위에서 아래로 실행한다. 코드만 실행하려면 `DAY2-model-learning.py`의 `RAW_DIR`을 설정한 뒤 아래 명령을 사용한다.
+노트북의 작업 폴더는 저장소 루트 또는 notebooks/로 둔다. Jupyter 또는 VS Code에서 [DAY 2 노트북](notebooks/30-ESSHealth-Day2-Modeling.ipynb)을 열고 위에서 아래로 실행한다. 코드만 실행하려면 `src/DAY2-model-learning.py`의 `RAW_DIR`을 설정한 뒤 아래 명령을 사용한다.
 
 ```bash
-python DAY2-model-learning.py
+python src/DAY2-model-learning.py
 ```
 
-**중간 파일이 없는 빈 폴더에서 MAT부터 전체 실행했으며**, 생성한 특징·분할·선택 모델·평가 결과가 기존 실행과 일치함을 확인했다. 검증 기록은 [verification.json](DAY2-learning/verification.json)에 있다.
+**구조 정리 전 중간 파일이 없는 빈 폴더에서 MAT부터 전체 실행했으며**, 생성한 특징·분할·선택 모델·평가 결과가 기존 실행과 일치함을 확인했다. 검증 기록은 [verification.json](results/verification.json)에 있다.
 
 ## EDA
 
@@ -100,7 +106,7 @@ python DAY2-model-learning.py
 | Batch 2 |     565.7 |   472.0 | 28/39, 71.8% |    3/39, 7.7% |
 | Batch 3 |   1,059.7 | 1,005.5 |   0/44, 0.0% |  23/44, 52.3% |
 
-![배치별 수명 분포](q1_batch_life.png)
+![배치별 수명 분포](results/figures/q1_batch_life.png)
 
 - **핵심 발견:** Batch 2는 단수명 셀이 많고, Batch 3는 장수명 비중이 높다.
 - **시사점:** Batch 1 내부 검증이 좋아도 다른 배치에서 같은 성능을 기대하기 어렵다. Batch 2·3를 별도로 평가하고, 수명 범위가 달라지는 구간의 오차를 확인한다.
@@ -109,7 +115,7 @@ python DAY2-model-learning.py
 
 초기 용량이 유지되거나 조금 증가한 뒤, 후반에 감소가 빨라지는 셀들이 보였다. 100사이클 용량이 2사이클보다 큰 셀은 Batch 1 42/46, Batch 2 25/39, Batch 3 37/44였다. 초기 용량이 비슷해도 전체 수명은 달랐다.
 
-![배치별 방전 용량 추이](q2_degradation.png)
+![배치별 방전 용량 추이](results/figures/q2_degradation.png)
 
 - 장수명 셀은 용량을 더 오래 유지하는 경향이 있고, 단수명 셀은 더 이른 사이클에 수명 종료 구간에 도달했다. 모든 셀의 감소를 일정한 직선으로 설명하기는 어렵다.
 - 대표 셀에 직선 두 개를 맞춘 Knee 후보는 Batch 1 `b1c28` 약 628사이클, Batch 2 `b2c16` 약 365사이클, Batch 3 `b3c0` 약 843사이클이었다. 전체 셀의 공통 Knee나 물리적 열화 시작점을 확정한 결과는 아니다.
@@ -120,7 +126,7 @@ python DAY2-model-learning.py
 
 같은 셀·같은 전압에서 `ΔQ(V) = Q100(V) − Q10(V)`를 계산했다. `Vdlin`과 `Qdlin`은 원자료 필드이며, `voltage`, `q10`, `q100`은 이를 꺼내 담은 코드 이름이다.
 
-![장단수명 셀의 초기 용량 차이 곡선](q3_delta_q.png)
+![장단수명 셀의 초기 용량 차이 곡선](results/figures/q3_delta_q.png)
 
 **그래프 읽는 방법:** Short는 수명 500사이클 미만, Long은 1,000사이클 초과다. Batch 1·3에는 Short 셀이 각각 0개여서 곡선이 없다. Batch 2의 주황색은 Short 28개, 청록색은 Long 3개다. 진한 선은 집단 평균, 옅은 선은 개별 셀이다. 세 패널은 같은 축 범위를 사용하며 500~1,000사이클 셀은 이 비교 그림에서 제외했다.
 
@@ -133,7 +139,7 @@ python DAY2-model-learning.py
 
 프로토콜별 평균 수명은 달랐지만 첫 C-rate 하나로 수명 순서를 설명하기 어려웠다. 예를 들어 Batch 2에서 `3.6C(9%)-5C`의 평균 수명은 394.5사이클(2개), `5.2C(58%)-4C`는 685.1사이클(7개)이었다. 첫 단계가 낮아도 이후 충전 조건과 전환 시점이 다르다.
 
-![배치별 충전 프로토콜 평균 수명](q4_charge_policy.png)
+![배치별 충전 프로토콜 평균 수명](results/figures/q4_charge_policy.png)
 
 - 첫 C-rate와 수명 상관은 Batch 1 −0.235, Batch 2 +0.191, Batch 3 −0.039로 방향이 일정하지 않았다.
 - **핵심 발견:** 충전 조건은 첫 C-rate, 두 번째 C-rate, 전환 SOC를 함께 봐야 한다.
@@ -141,7 +147,7 @@ python DAY2-model-learning.py
 
 ### 추가 확인: 상관관계와 변수 중복
 
-![초기 특징과 수명의 배치별 상관관계](q5_correlations.png)
+![초기 특징과 수명의 배치별 상관관계](results/figures/q5_correlations.png)
 
 - 초기 평균 충전 시간과 수명의 상관은 Batch 1 +0.570, Batch 2 −0.917, Batch 3 +0.598이었다. 전체 상관만 보면 배치별 방향 차이를 놓칠 수 있다.
 - 두 ΔQ 변수의 상관은 −0.959로 강했고, 평균·최대 온도도 +0.865로 정보가 겹쳤다.
@@ -181,7 +187,7 @@ python DAY2-model-learning.py
 | 기본 + 전압 구간 차이 |              12.19 |
 | 기본 + 두 파생변수    |              11.90 |
 
-![입력 조합별 선택용 CV 비교](DAY2-feature-ablation.png)
+![입력 조합별 선택용 CV 비교](results/figures/DAY2-feature-ablation.png)
 
 로그 분산만 사용한 조합이 가장 낮아 최종 입력으로 선택했다. 구간 차이는 기대한 추가 효과를 이번 SVR에서 확인하지 못해 제외했다. 이는 다른 모델에서도 항상 무의미하다는 뜻은 아니다. 각 조합의 설정도 따로 선택했으므로 변수 하나의 순수한 인과 효과를 증명한 비교는 아니다.
 
@@ -202,7 +208,7 @@ python DAY2-model-learning.py
 **보류는 성능이 나빠서 제외했다는 뜻이 아니다.** 이 변수들을 추가한 모델의 CV는 이번에 비교하지 않았다.
 상관이 작거나 방향이 다르더라도 비선형 관계·다른 변수와의 조합은 도움이 될 수 있다.
 후속 실험에서는 Batch 1 개발 자료에서 하나씩 추가해 같은 그룹 분할로 비교해야 한다.
-근거: [배치별 상관 표](correlations.csv), [초기 측정 품질 표](input_quality.csv).
+근거: [배치별 상관 표](results/correlations.csv), [초기 측정 품질 표](results/input_quality.csv).
 
 ### 모델 선택 및 근거
 
@@ -226,7 +232,7 @@ Batch 1 프로토콜 그룹의 20%를 Hold-out으로 두고 시드 42를 사용�
 
 가로축은 입력인 ΔQ 로그 분산, 세로축은 모델이 예측한 사이클 수명이다. 주황색 선은 저장된 모델의 예측이며, 파란 점은 개발 셀의 실제 수명이다. 배경은 개발 입력 범위, 점선은 그 범위 밖의 예측이다. 실제 수명과 예측 수명을 비교하는 그림의 대각선 기준선과 구분한다. 범위 밖에서 평평해지거나 방향이 바뀌는 현상을 배터리의 물리 법칙으로 해석하지 않는다.
 
-![최종 SVR의 입력에 따른 예측 곡선](DAY2-learning/svr-prediction-curve.png)
+![최종 SVR의 입력에 따른 예측 곡선](results/figures/svr-prediction-curve.png)
 
 ## 성능 결과
 
@@ -285,7 +291,7 @@ Batch 2에서 오차율이 가장 큰 세 셀은 개발 수명 범위보다 짧�
 
 Batch 3에서는 `b3c7`(실제 1,836 → 예측 721.4)처럼 장수명 셀을 크게 과소 예측했다. 두 배치를 함께 보면 개발 자료의 수명 범위를 벗어난 셀에서 오차가 커지는 경향이 있었다.
 
-![실제 수명과 예측 수명 비교](DAY2-predicted-vs-observed.png)
+![실제 수명과 예측 수명 비교](results/figures/DAY2-predicted-vs-observed.png)
 
 개발 수명 범위는 534~1,054사이클이었다. Batch 2의 범위 안 7개 MAPE는 8.90%, 범위 밖 32개는 32.28%였다. Batch 3의 범위 안 26개는 7.91%, 범위 밖 14개는 39.17%였다.
 
@@ -332,4 +338,6 @@ Batch 3에서는 `b3c7`(실제 1,836 → 예측 721.4)처럼 장수명 셀을 �
 - h5py. [Quick Start Guide](https://docs.h5py.org/en/stable/quick.html).
 - 학습용 구성 참고: 사용자가 제공한 `ML_5)_Timeseries.ipynb`.
 
-실제 수치의 근거는 [전체 성능 표](DAY2-performance-report-batch3.csv), [셀별 예측](DAY2-learning/evaluation-predictions.csv), [후보 비교](DAY2-learning/candidate-results.csv), DAY 1 EDA 기록이다.
+실제 수치의 근거는 [전체 성능 표](results/DAY2-performance-report-batch3.csv), [셀별 예측](results/evaluation-predictions.csv), [후보 비교](results/candidate-results.csv), DAY 1 EDA 기록이다.
+
+디렉터리 정리 후에는 루트·notebooks 작업 폴더와 참고 코드의 경로, 결과 파일 보존, 저장된 모델의 예측 일치를 별도로 확인했다. 학습 알고리즘과 설정은 변경하지 않았다.

@@ -12,45 +12,50 @@
 
 ## 실행 준비
 
+저장소 루트에서 환경을 설치한다. notebooks/의 DAY 2 노트북은 루트 또는 notebooks/를 작업 폴더로 실행한다. 참고 코드는 루트에서 python src/DAY2-model-learning.py로 실행한다.
+
 원자료 세 파일을 준비하고 노트북 1-1의 RAW_DIR을 그 폴더로 설정한다.
 
 - 2017-05-12_batchdata_updated_struct_errorcorrect.mat
 - 2018-02-20_batchdata_updated_struct_errorcorrect.mat
 - 2018-04-12_batchdata_updated_struct_errorcorrect.mat
 
-약 8GB의 MAT 원본은 ZIP에 포함하지 않는다. 사용자의 기존 data-30 폴더를 사용한다.
-Python 환경에서 `python -m pip install -r DAY2-requirements.txt`를 실행한다.
-ZIP에는 같은 목록을 requirements.txt로도 넣었다. h5py가 추가되었으며 검증 버전은 3.16.0이다.
+약 8GB의 MAT 원본은 저장소에 포함하지 않는다. 사용자의 기존 data-30 폴더를 사용한다.
+Python 환경에서 `python -m pip install -r requirements.txt`를 실행한다.
+requirements.txt 한 파일로 라이브러리 목록을 관리한다. h5py가 추가되었으며 검증 버전은 3.16.0이다.
 그 외 검증 환경은 Python 3.14.6 / scikit-learn 1.9.0이다.
-노트북을 위에서 아래로 실행하거나 `python DAY2-model-learning.py`로 실행한다.
+노트북을 위에서 아래로 실행하거나 `python src/DAY2-model-learning.py`로 실행한다.
 
 ## 학습 순서
 
-13단계, 114셀(코드 57셀)이며 코드 셀은 최대 23줄이다.
+13단계, 115셀(코드 58셀)이며 코드 셀은 최대 23줄이다.
 1~7단계에서 데이터 생성·X/y·전처리·fit/predict를 먼저 이해한다.
 8~13단계에서 후보 선택·중첩 CV·평가·그래프·Self-Practice를 읽는다.
 변수 출처는 1-7과 DAY2-변수설명.md에 있다.
 
 ## 생성되는 파일
 
-모두 DAY2-learning/ 폴더에 저장한다. 입력으로 미리 준비할 파일이 아니다.
+모두 results/ 폴더에 저장한다. 입력으로 미리 준비할 파일이 아니다.
 
 - three_batches_eda_data.json.gz: MAT에서 추출한 곡선·요약 기록
 - data_audit.csv: 셀별 제외 이유
 - cell_features.csv: 초기 특징과 파생변수 표
 - DAY2-split-manifest.csv: 코드에서 생성한 개발·검증·Test 목록
 - best-model.joblib, candidate-results.csv, evaluation-predictions.csv, performance-report.csv 등
+- figures/: 그래프
+
+DAY 1을 다시 실행할 때의 탐색 CSV·분할은 results/eda/에 저장하여 최종 DAY 2 결과를 덮어쓰지 않는다.
 
 ## 실행 확인
 
 기존 중간 파일이 없는 빈 폴더에서 MAT부터 전체 실행했다.
 생성 CSV·분할 목록, 선택 모델, 후보 340개 점수, 평가 예측 86개가 기존 결과와 일치했다.
-검증 기록은 DAY2-learning/verification.json에 있다.
+검증 기록은 results/verification.json에 있다.
 Train CV 15.40%, Valid 11.87%, Batch 2 28.08%, Batch 3 18.85%다.
 선택용 CV 8.30%와 Test를 구분하고, 과제 기준 9.1% 미달을 그대로 설명한다.
 
-ZIP의 DAY2-learning/은 실제 실행 결과의 예시다. 삭제해도 MAT부터 다시 생성할 수 있다.
-루트의 DAY2-results-summary.json은 이전 결과와의 선택적 비교용이며 없으면 비교만 건너뛴다.
+저장소의 results/는 실제 실행 결과의 예시다. 삭제해도 MAT부터 다시 생성할 수 있다.
+results/DAY2-results-summary.json은 이전 결과와의 선택적 비교용이며 없으면 비교만 건너뛴다.
 보고서는 추가하지 않는다. 현재 결정과 맥락은 PROJECT_LOG.md를 확인한다.
 
 ## 평가 기준에 맞춘 설명

@@ -33,6 +33,9 @@
 #
 # `h5py`로 MATLAB v7.3(HDF5) 파일을 읽는다. `numpy`는 수치 계산, `pandas`는 셀별 표를 만든다.
 # **아래 RAW_DIR만 실제 MAT 폴더로 설정한다.** 기존 CSV·GZ가 없어도 실행된다.
+#
+# 폴더 구조를 정리해 결과는 results/, 그래프는 results/figures/에 저장한다.
+# 아래 일부 저장된 출력의 이전 경로는 당시 실행 기록이며, 재실행하면 새 경로를 사용한다. 학습 계산과 결과 수치는 그대로다.
 
 from pathlib import Path
 import gzip
@@ -47,12 +50,16 @@ import matplotlib.pyplot as plt
 import sklearn
 import joblib
 
+
+
 RAW_DIR = Path('/Users/jang/Documents/data-science/skala-ds/90-MiniProject/data/data-30')
-DATA_DIR = Path.cwd()
-if DATA_DIR.name != 'outputs' and (DATA_DIR / 'outputs').is_dir():
-    DATA_DIR = DATA_DIR / 'outputs'
-SAVE_DIR = DATA_DIR / 'DAY2-learning'
-SAVE_DIR.mkdir(parents=True, exist_ok=True)
+PROJECT_ROOT = Path(__file__).resolve().parents[1] if '__file__' in globals() else Path.cwd().resolve()
+if PROJECT_ROOT.name == 'notebooks':
+    PROJECT_ROOT = PROJECT_ROOT.parent
+DATA_DIR = PROJECT_ROOT / 'results'
+SAVE_DIR = DATA_DIR
+FIGURE_DIR = SAVE_DIR / 'figures'
+FIGURE_DIR.mkdir(parents=True, exist_ok=True)
 SEED = 42
 TARGET_MAPE = 9.1
 print('MAT 위치:', RAW_DIR)
@@ -262,7 +269,7 @@ print('제외 사유 기록:', SAVE_DIR / 'data_audit.csv')
 # **3단계에서 만들 CSV의 기본 후보도 출처가 다르다.** `C1`, `C2`, `SOC_switch`는 충전 프로토콜 문자열을 숫자로 분리한 값이고, `mean_chargetime`은 초기 2~100사이클 충전 시간의 평균이다. `mean_QD`, `mean_IR`, `mean_Tavg`, `mean_Tmax`도 초기 측정값을 요약한 평균이며, 이번 DAY 2 입력 후보에는 넣지 않았다.
 #
 # `X_train_scaled`, `best_model`, `predictions`처럼 뒤에 나오는 이름은 각각 변환한 표, 학습된 모델, 예측 결과다. 원자료의 측정 변수나 추가 파생변수가 아니다.
-# 코드에 등장하는 나머지 이름은 [DAY2-변수설명.md](DAY2-변수설명.md)에 역할별로 모두 정리했다.
+# 코드에 등장하는 나머지 이름은 [DAY2-변수설명.md](../docs/DAY2-변수설명.md)에 역할별로 모두 정리했다.
 
 # # 2. 데이터 확인
 # ## 2-1. 컬럼·결측값·수명 분포 확인
@@ -510,7 +517,7 @@ df[['C1', 'C2', 'SOC_switch', 'mean_chargetime', 'dq_log_variance', 'dq_band_gap
 # **보류는 성능이 나빠서 제외했다는 뜻이 아니다.** 이 변수들을 추가한 모델의 CV는 이번에 비교하지 않았다.
 # 상관이 작거나 방향이 다르더라도 비선형 관계·다른 변수와의 조합은 도움이 될 수 있다.
 # 후속 실험에서는 Batch 1 개발 자료에서 하나씩 추가해 같은 그룹 분할로 비교해야 한다.
-# 근거: [배치별 상관 표](correlations.csv), [초기 측정 품질 표](input_quality.csv).
+# 근거: [배치별 상관 표](../results/correlations.csv), [초기 측정 품질 표](../results/input_quality.csv).
 
 TARGET = 'cycle_life'
 BASE_FEATURES = ['C1', 'C2', 'SOC_switch', 'mean_chargetime']
@@ -1240,7 +1247,7 @@ ax.set(xlabel='Delta Q log variance (dq_log_variance)',
 ax.legend(fontsize=9)
 ax.grid(alpha=.15)
 fig.tight_layout()
-fig.savefig(SAVE_DIR / 'svr-prediction-curve.png', dpi=170, bbox_inches='tight')
+fig.savefig(FIGURE_DIR / 'svr-prediction-curve.png', dpi=170, bbox_inches='tight')
 plt.show()
 
 

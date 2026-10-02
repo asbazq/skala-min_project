@@ -65,8 +65,8 @@ delta_q = q100 - q10
 
 | 이름 | 설명 |
 |---|---|
-| `DATA_DIR` | 입력 파일이 있는 폴더 경로. |
-| `SAVE_DIR` | 학습용 결과를 저장하는 DAY2-learning 폴더. |
+| `DATA_DIR` | results 폴더 경로. 입력 MAT는 RAW_DIR에서 읽음. |
+| `SAVE_DIR` | 학습용 결과를 저장하는 results 폴더. |
 | `SEED` | 난수 시드 42. Random Forest처럼 난수를 쓰는 알고리즘의 재현 설정. |
 | `TARGET_MAPE` | 과제에서 비교하는 논문 기준 9.1%. 학습 입력이 아님. |
 | `df` | MAT에서 만든 셀별 표. 처음은 식별·수명·사용 여부만 있고 3단계에서 초기 평균·파생변수를 합친 129행 표로 바뀜. |
@@ -206,7 +206,7 @@ delta_q = q100 - q10
 5. **절차·결과:** folds/best_model/predictions/MAPE 등 학습·평가를 수행하며 만든 객체.
 
 최종 모델이 보는 X는 `dq_log_variance` 하나이고, 맞혀야 할 y는 `cycle_life`다.
-자세한 계산은 [학습용 노트북](30-ESSHealth-Day2-Modeling.ipynb), 원자료 추출은 노트북 1단계를 참고한다.
+자세한 계산은 [학습용 노트북](../notebooks/30-ESSHealth-Day2-Modeling.ipynb), 원자료 추출은 노트북 1단계를 참고한다.
 
 ## 6. MAT부터 생성하는 코드에 추가된 이름
 
@@ -245,3 +245,10 @@ CSV/GZ를 미리 읽는 방식 대신 원자료부터 직접 만들면서 추가
 | curve_prediction | 각 입력에서 고정 모델이 예측한 사이클 수명 |
 | train_x_min / train_x_max | 개발 29개 셀의 입력 범위 |
 | curve_in_train | 그림의 입력이 개발 범위 안인지 나타내는 표시, 모델 입력 아님 |
+
+## 디렉터리 정리 후 경로 변수
+
+- PROJECT_ROOT: 저장소 루트. 노트북은 루트 또는 notebooks/에서 실행한다.
+- DATA_DIR / SAVE_DIR: results 폴더.
+- FIGURE_DIR: results/figures 폴더.
+- DAY 1의 BASE: results/eda 폴더. DAY 2 최종 파일과 탐색 결과를 구분한다.

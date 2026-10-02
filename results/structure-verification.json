@@ -1,0 +1,11 @@
+{
+  "directory_structure": "notebooks/src/results/docs/data",
+  "notebook_root_and_notebooks_cwd_checked": true,
+  "script_arbitrary_cwd_checked": true,
+  "day2_learning_code_unchanged_except_paths": true,
+  "day1_cache_and_features_checked": true,
+  "model_and_existing_result_payloads_unchanged": true,
+  "saved_model_predictions_checked": 86,
+  "all_markdown_local_links_exist": true,
+  "full_training_repeated": false
+}
