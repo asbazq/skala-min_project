@@ -1,0 +1,341 @@
+family,feature_set,features,target_transform,hyperparameters,selection_cv_mape_pct,selected
+SVR,Variance only,dq_log_variance,log,"{""C"": 1, ""epsilon"": 0.01, ""gamma"": 0.1}",8.297508260683985,True
+SVR,Variance only,dq_log_variance,raw,"{""C"": 300, ""epsilon"": 5, ""gamma"": 0.1}",8.585059873390549,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 0.001, ""l1_ratio"": 0.9}",8.710456015029116,False
+SVR,Variance only,dq_log_variance,log,"{""C"": 10, ""epsilon"": 0.01, ""gamma"": 0.1}",8.890091673626625,False
+SVR,Variance only,dq_log_variance,raw,"{""C"": 300, ""epsilon"": 30, ""gamma"": 0.1}",8.996333169277692,False
+SVR,Variance only,dq_log_variance,log,"{""C"": 1, ""epsilon"": 0.05, ""gamma"": 0.1}",9.005269165228889,False
+Ridge,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 0.1}",9.177856454558915,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 0.1, ""l1_ratio"": 0.9}",9.189681266736384,False
+Ridge,Variance only,dq_log_variance,raw,"{""alpha"": 0.001}",9.33726289105575,False
+Ridge,Variance only,dq_log_variance,raw,"{""alpha"": 0.01}",9.339250068958338,False
+Ridge,Variance only,dq_log_variance,raw,"{""alpha"": 0.1}",9.359017350851854,False
+ElasticNet,Variance only,dq_log_variance,raw,"{""alpha"": 0.1, ""l1_ratio"": 0.9}",9.383051372136235,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 0.001, ""l1_ratio"": 0.9}",9.478973248454185,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 0.01, ""l1_ratio"": 0.1}",9.507548058670716,False
+ElasticNet,Variance only,dq_log_variance,raw,"{""alpha"": 0.1, ""l1_ratio"": 0.5}",9.53657454421251,False
+Ridge,Variance only,dq_log_variance,raw,"{""alpha"": 1}",9.546769219851646,False
+ElasticNet,Variance only,dq_log_variance,raw,"{""alpha"": 0.1, ""l1_ratio"": 0.1}",9.678829960540062,False
+Ridge,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 0.1}",9.68712949821659,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 0.01, ""l1_ratio"": 0.5}",9.72132531218018,False
+ElasticNet,Variance only,dq_log_variance,raw,"{""alpha"": 1, ""l1_ratio"": 0.9}",9.759491889213455,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 0.001, ""l1_ratio"": 0.5}",9.811265684852422,False
+Ridge,Variance only,dq_log_variance,log,"{""alpha"": 0.001}",9.815208694194867,False
+Ridge,Variance only,dq_log_variance,log,"{""alpha"": 0.01}",9.81583978841083,False
+ElasticNet,Variance only,dq_log_variance,log,"{""alpha"": 0.001, ""l1_ratio"": 0.1}",9.818408069633405,False
+Ridge,Variance only,dq_log_variance,log,"{""alpha"": 0.1}",9.822134721744936,False
+ElasticNet,Variance only,dq_log_variance,log,"{""alpha"": 0.001, ""l1_ratio"": 0.5}",9.826566140042436,False
+ElasticNet,Variance only,dq_log_variance,log,"{""alpha"": 0.001, ""l1_ratio"": 0.9}",9.834747241912966,False
+ElasticNet,Variance only,dq_log_variance,log,"{""alpha"": 0.01, ""l1_ratio"": 0.1}",9.847798137477826,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 0.01, ""l1_ratio"": 0.5}",9.888110082388664,False
+Ridge,Variance only,dq_log_variance,log,"{""alpha"": 1}",9.907402237332109,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 0.001, ""l1_ratio"": 0.5}",9.945235734846442,False
+ElasticNet,Variance only,dq_log_variance,log,"{""alpha"": 0.01, ""l1_ratio"": 0.5}",9.947515942089643,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 0.01, ""l1_ratio"": 0.5}",10.049646063123683,False
+ElasticNet,Variance only,dq_log_variance,log,"{""alpha"": 0.01, ""l1_ratio"": 0.9}",10.059551010352429,False
+Ridge,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 0.1}",10.128070404257496,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 0.01, ""l1_ratio"": 0.9}",10.224954747900165,False
+Ridge,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 0.1}",10.236281666084723,False
+SVR,Variance only,dq_log_variance,raw,"{""C"": 100, ""epsilon"": 30, ""gamma"": 0.1}",10.266580742338267,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 0.001, ""l1_ratio"": 0.9}",10.291371043088583,False
+ElasticNet,Variance only,dq_log_variance,log,"{""alpha"": 0.1, ""l1_ratio"": 0.1}",10.296327518149202,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 0.01, ""l1_ratio"": 0.1}",10.299179832859977,False
+SVR,Variance only,dq_log_variance,raw,"{""C"": 100, ""epsilon"": 5, ""gamma"": 0.1}",10.382155401991248,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 0.01, ""l1_ratio"": 0.1}",10.423916211586237,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 0.01, ""l1_ratio"": 0.5}",10.50846371114175,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 0.1, ""l1_ratio"": 0.9}",10.51536106603923,False
+SVR,Variance only,dq_log_variance,log,"{""C"": 10, ""epsilon"": 0.05, ""gamma"": 0.1}",10.515773387573722,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 0.01, ""l1_ratio"": 0.9}",10.657445505676217,False
+ElasticNet,Variance only,dq_log_variance,raw,"{""alpha"": 1, ""l1_ratio"": 0.5}",10.75072283651039,False
+RandomForestRegressor,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""max_depth"": 3, ""min_samples_leaf"": 4}",10.777557890071881,False
+RandomForestRegressor,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""max_depth"": 2, ""min_samples_leaf"": 4}",10.778537578587589,False
+SVR,Variance only,dq_log_variance,log,"{""C"": 0.1, ""epsilon"": 0.05, ""gamma"": 0.1}",10.789629650970191,False
+Ridge,Variance only,dq_log_variance,raw,"{""alpha"": 10}",10.79536894689497,False
+Ridge,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 0.1}",10.81805901487587,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 0.001, ""l1_ratio"": 0.5}",10.882310580789522,False
+Ridge,Variance only,dq_log_variance,log,"{""alpha"": 10}",10.894989237987977,False
+SVR,Variance only,dq_log_variance,log,"{""C"": 0.1, ""epsilon"": 0.01, ""gamma"": 0.1}",11.106628443093102,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 0.1, ""l1_ratio"": 0.5}",11.234641080441127,False
+RandomForestRegressor,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""max_depth"": 2, ""min_samples_leaf"": 4}",11.23858396216928,False
+RandomForestRegressor,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""max_depth"": 3, ""min_samples_leaf"": 4}",11.24303857021111,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 0.1, ""l1_ratio"": 0.9}",11.35242871437856,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""C"": 1, ""epsilon"": 0.05, ""gamma"": 0.1}",11.378425180284106,False
+ElasticNet,Variance only,dq_log_variance,raw,"{""alpha"": 1, ""l1_ratio"": 0.1}",11.57854002847179,False
+RandomForestRegressor,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""max_depth"": 2, ""min_samples_leaf"": 4}",11.584205776178665,False
+RandomForestRegressor,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""max_depth"": 3, ""min_samples_leaf"": 4}",11.584205776178665,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 0.1, ""l1_ratio"": 0.5}",11.587927811026882,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""C"": 10, ""epsilon"": 0.05, ""gamma"": 0.1}",11.589519155664037,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 0.001, ""l1_ratio"": 0.1}",11.616754711373577,False
+Ridge,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 0.1}",11.641040560764061,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 0.001, ""l1_ratio"": 0.9}",11.684315066176552,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 1, ""l1_ratio"": 0.1}",11.759814448891106,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""C"": 100, ""epsilon"": 30, ""gamma"": 0.1}",11.762941402421372,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 0.01, ""l1_ratio"": 0.9}",11.776497571737902,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 0.1, ""l1_ratio"": 0.5}",11.816169577683212,False
+ElasticNet,Variance only,dq_log_variance,log,"{""alpha"": 0.1, ""l1_ratio"": 0.5}",11.816379899312423,False
+RandomForestRegressor,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""max_depth"": 2, ""min_samples_leaf"": 4}",11.829656495806564,False
+RandomForestRegressor,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""max_depth"": 3, ""min_samples_leaf"": 4}",11.829656495806564,False
+Ridge,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 1}",11.847545378166787,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 10, ""l1_ratio"": 0.9}",11.88749295805595,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""C"": 0.1, ""epsilon"": 0.05, ""gamma"": 0.1}",11.90379897844323,False
+Ridge,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 10}",11.945519813259258,False
+Ridge,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 10}",11.956655240126409,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""C"": 0.1, ""epsilon"": 0.05, ""gamma"": 0.1}",11.967643163632735,False
+Ridge,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 10}",11.979401355759126,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""C"": 0.1, ""epsilon"": 0.01, ""gamma"": 0.1}",12.004696084390439,False
+RandomForestRegressor,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""max_depth"": 2, ""min_samples_leaf"": 4}",12.006299812169434,False
+RandomForestRegressor,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""max_depth"": 3, ""min_samples_leaf"": 4}",12.006299812169434,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 1, ""l1_ratio"": 0.5}",12.006771720055543,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""C"": 1, ""epsilon"": 0.05, ""gamma"": ""scale""}",12.03418681464533,False
+ElasticNet,Variance only,dq_log_variance,raw,"{""alpha"": 10, ""l1_ratio"": 0.9}",12.068814551323314,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""C"": 1, ""epsilon"": 0.05, ""gamma"": 0.1}",12.125699789250739,False
+SVR,Variance only,dq_log_variance,raw,"{""C"": 30, ""epsilon"": 30, ""gamma"": 0.1}",12.138380566865951,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""C"": 0.1, ""epsilon"": 0.01, ""gamma"": 0.1}",12.140805179206893,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 0.1, ""l1_ratio"": 0.5}",12.178160687945097,False
+RandomForestRegressor,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""max_depth"": 2, ""min_samples_leaf"": 4}",12.178784632839259,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 0.001, ""l1_ratio"": 0.1}",12.182015750083174,False
+RandomForestRegressor,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""max_depth"": 3, ""min_samples_leaf"": 4}",12.182130752758857,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""C"": 100, ""epsilon"": 30, ""gamma"": 0.1}",12.183569155964761,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""C"": 0.1, ""epsilon"": 0.05, ""gamma"": 0.1}",12.19092371864668,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""C"": 0.1, ""epsilon"": 0.01, ""gamma"": ""scale""}",12.193751126799219,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 0.001, ""l1_ratio"": 0.5}",12.198782490218194,False
+Ridge,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 0.001}",12.211361814317529,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""C"": 1, ""epsilon"": 0.01, ""gamma"": 0.1}",12.218521696810338,False
+Ridge,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 1}",12.218522373091444,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""C"": 1, ""epsilon"": 0.05, ""gamma"": 0.1}",12.22101917664621,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 0.01, ""l1_ratio"": 0.1}",12.22497219174704,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""C"": 300, ""epsilon"": 30, ""gamma"": ""scale""}",12.232599688453593,False
+Ridge,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 10}",12.247219347412235,False
+RandomForestRegressor,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""max_depth"": 2, ""min_samples_leaf"": 2}",12.258927975932103,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""C"": 300, ""epsilon"": 30, ""gamma"": ""scale""}",12.259651181586534,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 1, ""l1_ratio"": 0.5}",12.260376076261174,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 0.01, ""l1_ratio"": 0.9}",12.264919326539832,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 1, ""l1_ratio"": 0.1}",12.267144338208874,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""C"": 100, ""epsilon"": 5, ""gamma"": 0.1}",12.267242032387689,False
+RandomForestRegressor,Variance only,dq_log_variance,log,"{""max_depth"": 2, ""min_samples_leaf"": 4}",12.304134899388544,False
+RandomForestRegressor,Variance only,dq_log_variance,log,"{""max_depth"": 3, ""min_samples_leaf"": 4}",12.304134899388544,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""C"": 300, ""epsilon"": 30, ""gamma"": ""scale""}",12.326317841163371,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""C"": 100, ""epsilon"": 30, ""gamma"": ""scale""}",12.353388469996219,False
+RandomForestRegressor,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""max_depth"": 3, ""min_samples_leaf"": 2}",12.373628784215828,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""C"": 100, ""epsilon"": 30, ""gamma"": ""scale""}",12.402900411328135,False
+Ridge,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 0.01}",12.411137869353755,False
+RandomForestRegressor,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""max_depth"": 2, ""min_samples_leaf"": 2}",12.42984876902197,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""C"": 300, ""epsilon"": 30, ""gamma"": 0.1}",12.432880979880284,False
+RandomForestRegressor,Variance only,dq_log_variance,raw,"{""max_depth"": 3, ""min_samples_leaf"": 4}",12.444195920540935,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""C"": 100, ""epsilon"": 30, ""gamma"": 0.1}",12.445555991852428,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 1, ""l1_ratio"": 0.9}",12.44666494818622,False
+RandomForestRegressor,Variance only,dq_log_variance,raw,"{""max_depth"": 2, ""min_samples_leaf"": 4}",12.447340935945205,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""C"": 0.1, ""epsilon"": 0.01, ""gamma"": ""scale""}",12.457632234128418,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 10, ""l1_ratio"": 0.9}",12.45795512469771,False
+Ridge,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 0.01}",12.460071245557849,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""C"": 0.1, ""epsilon"": 0.05, ""gamma"": ""scale""}",12.462592902693643,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""C"": 100, ""epsilon"": 5, ""gamma"": ""scale""}",12.480893963906412,False
+Ridge,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 10}",12.483674613812125,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 0.1, ""l1_ratio"": 0.1}",12.48609707200537,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""C"": 1, ""epsilon"": 0.05, ""gamma"": ""scale""}",12.536591493468427,False
+RandomForestRegressor,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""max_depth"": 2, ""min_samples_leaf"": 2}",12.54653613463346,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""C"": 100, ""epsilon"": 30, ""gamma"": ""scale""}",12.548327052618049,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""C"": 30, ""epsilon"": 30, ""gamma"": 0.1}",12.553288588649242,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 0.001, ""l1_ratio"": 0.1}",12.553727688776792,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""C"": 1, ""epsilon"": 0.05, ""gamma"": ""scale""}",12.574891359411131,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""C"": 300, ""epsilon"": 30, ""gamma"": 0.1}",12.578322148393687,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 1, ""l1_ratio"": 0.1}",12.581858145809907,False
+RandomForestRegressor,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""max_depth"": 3, ""min_samples_leaf"": 2}",12.591826531204035,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""C"": 0.1, ""epsilon"": 0.05, ""gamma"": ""scale""}",12.619749722890086,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""C"": 300, ""epsilon"": 30, ""gamma"": 0.1}",12.627480434918278,False
+RandomForestRegressor,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""max_depth"": 3, ""min_samples_leaf"": 2}",12.637915264568878,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""C"": 30, ""epsilon"": 30, ""gamma"": 0.1}",12.640126730728566,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 0.1, ""l1_ratio"": 0.1}",12.642284267797951,False
+Ridge,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 1}",12.645833713050402,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 0.001, ""l1_ratio"": 0.1}",12.653593735073585,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""C"": 300, ""epsilon"": 5, ""gamma"": 0.1}",12.655430585662911,False
+Ridge,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 10}",12.662983484344856,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""C"": 0.1, ""epsilon"": 0.01, ""gamma"": 0.1}",12.673045020370836,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 1, ""l1_ratio"": 0.5}",12.676509463610449,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""C"": 100, ""epsilon"": 5, ""gamma"": 0.1}",12.708438580995987,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""C"": 30, ""epsilon"": 30, ""gamma"": 0.1}",12.717125373513975,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""C"": 30, ""epsilon"": 5, ""gamma"": 0.1}",12.72224316472693,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""C"": 1, ""epsilon"": 0.05, ""gamma"": ""scale""}",12.727097286026847,False
+RandomForestRegressor,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""max_depth"": 2, ""min_samples_leaf"": 2}",12.729952435089015,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""C"": 0.1, ""epsilon"": 0.05, ""gamma"": ""scale""}",12.75687255478674,False
+SVR,Variance only,dq_log_variance,raw,"{""C"": 30, ""epsilon"": 5, ""gamma"": 0.1}",12.75845225532866,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 10, ""l1_ratio"": 0.9}",12.774037830548886,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""C"": 1, ""epsilon"": 0.01, ""gamma"": ""scale""}",12.793762647505465,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""C"": 100, ""epsilon"": 5, ""gamma"": 0.1}",12.841702477150662,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 1, ""l1_ratio"": 0.9}",12.846631217030732,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 0.1, ""l1_ratio"": 0.5}",12.850776276168821,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""C"": 10, ""epsilon"": 0.01, ""gamma"": 0.1}",12.854830436315472,False
+Ridge,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 0.001}",12.865788861593963,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""C"": 10, ""epsilon"": 0.05, ""gamma"": ""scale""}",12.87049889218411,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""C"": 0.1, ""epsilon"": 0.01, ""gamma"": ""scale""}",12.871021289950434,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""C"": 100, ""epsilon"": 5, ""gamma"": ""scale""}",12.879919089261529,False
+Ridge,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 1}",12.881204685794303,False
+RandomForestRegressor,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""max_depth"": 3, ""min_samples_leaf"": 2}",12.892624189942497,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""C"": 1, ""epsilon"": 0.01, ""gamma"": 0.1}",12.89535003915069,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""C"": 30, ""epsilon"": 30, ""gamma"": ""scale""}",12.896419562031891,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 0.1, ""l1_ratio"": 0.1}",12.903324338604422,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""C"": 300, ""epsilon"": 5, ""gamma"": ""scale""}",12.909974463117047,False
+RandomForestRegressor,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""max_depth"": 2, ""min_samples_leaf"": 2}",12.919355412313157,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""C"": 100, ""epsilon"": 30, ""gamma"": ""scale""}",12.962975944013403,False
+Ridge,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 100}",12.96527736498709,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""C"": 100, ""epsilon"": 30, ""gamma"": 0.1}",12.97420609762926,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""C"": 30, ""epsilon"": 5, ""gamma"": 0.1}",12.980536474123847,False
+Ridge,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 0.001}",12.98949224013198,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""C"": 30, ""epsilon"": 30, ""gamma"": ""scale""}",13.026411631866283,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""C"": 300, ""epsilon"": 5, ""gamma"": ""scale""}",13.02914074271064,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""C"": 30, ""epsilon"": 30, ""gamma"": ""scale""}",13.03152505934681,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 1, ""l1_ratio"": 0.9}",13.032969768504584,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""C"": 30, ""epsilon"": 5, ""gamma"": ""scale""}",13.036542833859773,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""C"": 1, ""epsilon"": 0.05, ""gamma"": 0.1}",13.038547130881776,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 0.1, ""l1_ratio"": 0.1}",13.063783046621483,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""C"": 300, ""epsilon"": 30, ""gamma"": 0.1}",13.066193316648805,False
+RandomForestRegressor,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""max_depth"": 3, ""min_samples_leaf"": 2}",13.075094042096532,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""C"": 0.1, ""epsilon"": 0.05, ""gamma"": 0.1}",13.076402459301942,False
+Ridge,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 0.01}",13.087326505405125,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 0.1, ""l1_ratio"": 0.1}",13.106153736439854,False
+Ridge,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 0.01}",13.109924584169134,False
+RandomForestRegressor,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""max_depth"": 2, ""min_samples_leaf"": 2}",13.1265968691983,False
+Ridge,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 100}",13.155460905758618,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""C"": 30, ""epsilon"": 5, ""gamma"": 0.1}",13.16979546930512,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 0.1, ""l1_ratio"": 0.1}",13.174016988954435,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""C"": 0.1, ""epsilon"": 0.01, ""gamma"": ""scale""}",13.177500529060874,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 10, ""l1_ratio"": 0.5}",13.188404317699867,False
+Ridge,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 1}",13.216583473479593,False
+RandomForestRegressor,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""max_depth"": 3, ""min_samples_leaf"": 2}",13.220617458229594,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""C"": 0.1, ""epsilon"": 0.05, ""gamma"": ""scale""}",13.227723117004125,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""C"": 100, ""epsilon"": 5, ""gamma"": ""scale""}",13.231138280902757,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""C"": 30, ""epsilon"": 5, ""gamma"": ""scale""}",13.245232415944002,False
+Ridge,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 1}",13.25355142527587,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""C"": 1, ""epsilon"": 0.01, ""gamma"": 0.1}",13.26249709831858,False
+Ridge,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 0.01}",13.28760735831307,False
+RandomForestRegressor,Variance only,dq_log_variance,log,"{""max_depth"": 2, ""min_samples_leaf"": 2}",13.302678306710773,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""C"": 10, ""epsilon"": 0.05, ""gamma"": 0.1}",13.337544842216174,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""C"": 1, ""epsilon"": 0.01, ""gamma"": ""scale""}",13.343747943762253,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 0.1, ""l1_ratio"": 0.9}",13.361343295499092,False
+SVR,Variance only,dq_log_variance,raw,"{""C"": 30, ""epsilon"": 30, ""gamma"": ""scale""}",13.376158928817802,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""C"": 30, ""epsilon"": 5, ""gamma"": ""scale""}",13.378526607604849,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""C"": 1, ""epsilon"": 0.01, ""gamma"": ""scale""}",13.38140449904557,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""C"": 300, ""epsilon"": 5, ""gamma"": 0.1}",13.427383584010125,False
+RandomForestRegressor,Variance only,dq_log_variance,log,"{""max_depth"": 3, ""min_samples_leaf"": 2}",13.438827670314318,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""C"": 10, ""epsilon"": 0.01, ""gamma"": ""scale""}",13.44928543144375,False
+RandomForestRegressor,Variance only,dq_log_variance,raw,"{""max_depth"": 2, ""min_samples_leaf"": 2}",13.456277597363817,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""C"": 300, ""epsilon"": 30, ""gamma"": ""scale""}",13.46741810026431,False
+SVR,Variance only,dq_log_variance,log,"{""C"": 0.1, ""epsilon"": 0.01, ""gamma"": ""scale""}",13.470803298709072,False
+Ridge,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 0.1}",13.477762908681514,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""C"": 300, ""epsilon"": 5, ""gamma"": ""scale""}",13.496531326208041,False
+Ridge,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 1}",13.506454523605724,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 0.1, ""l1_ratio"": 0.5}",13.515133821094203,False
+RandomForestRegressor,Variance only,dq_log_variance,raw,"{""max_depth"": 3, ""min_samples_leaf"": 2}",13.515415479883657,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""C"": 100, ""epsilon"": 5, ""gamma"": ""scale""}",13.527916469120962,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 0.1, ""l1_ratio"": 0.5}",13.534760594135992,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""C"": 10, ""epsilon"": 0.05, ""gamma"": ""scale""}",13.537626260438326,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""C"": 0.1, ""epsilon"": 0.01, ""gamma"": 0.1}",13.53790252398298,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""C"": 300, ""epsilon"": 5, ""gamma"": 0.1}",13.545532422416843,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""C"": 30, ""epsilon"": 30, ""gamma"": 0.1}",13.569941168098087,False
+Ridge,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 0.001}",13.583397963625679,False
+Ridge,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 1}",13.585751084169287,False
+SVR,Variance only,dq_log_variance,raw,"{""C"": 100, ""epsilon"": 5, ""gamma"": ""scale""}",13.618389290132319,False
+SVR,Variance only,dq_log_variance,raw,"{""C"": 30, ""epsilon"": 5, ""gamma"": ""scale""}",13.622454826648415,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""C"": 30, ""epsilon"": 30, ""gamma"": ""scale""}",13.638483633796913,False
+Ridge,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 100}",13.648613821941261,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 0.1, ""l1_ratio"": 0.9}",13.678035598104188,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""C"": 100, ""epsilon"": 5, ""gamma"": 0.1}",13.687734404893837,False
+Ridge,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 0.001}",13.711536889563316,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""C"": 1, ""epsilon"": 0.01, ""gamma"": 0.1}",13.730955937314762,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""C"": 30, ""epsilon"": 5, ""gamma"": ""scale""}",13.805874700599166,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 10, ""l1_ratio"": 0.1}",13.842421629321096,False
+Ridge,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 100}",13.862729038763852,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 10, ""l1_ratio"": 0.5}",13.869493027061713,False
+Ridge,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 100}",13.873816668852626,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""C"": 1, ""epsilon"": 0.01, ""gamma"": ""scale""}",13.887683306581906,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""C"": 30, ""epsilon"": 5, ""gamma"": 0.1}",13.941574266012942,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""C"": 300, ""epsilon"": 5, ""gamma"": 0.1}",13.953851233945205,False
+Ridge,Variance only,dq_log_variance,log,"{""alpha"": 100}",13.954763485116581,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""C"": 10, ""epsilon"": 0.05, ""gamma"": 0.1}",13.966894502089852,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 1, ""l1_ratio"": 0.9}",13.978563288878773,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 0.1, ""l1_ratio"": 0.1}",14.014730783122717,False
+Ridge,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 100}",14.082875100110194,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 10, ""l1_ratio"": 0.5}",14.090657882435773,False
+Ridge,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 10}",14.121106894356188,False
+Ridge,Variance only,dq_log_variance,raw,"{""alpha"": 100}",14.12592850463785,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 0.1, ""l1_ratio"": 0.9}",14.1440033422813,False
+ElasticNet,Variance only,dq_log_variance,raw,"{""alpha"": 10, ""l1_ratio"": 0.5}",14.151023279632449,False
+Ridge,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 0.1}",14.210402091495453,False
+RandomForestRegressor,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""max_depth"": 3, ""min_samples_leaf"": 2}",14.285004265880588,False
+ElasticNet,Variance only,dq_log_variance,log,"{""alpha"": 0.1, ""l1_ratio"": 0.9}",14.293057761283654,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 0.1, ""l1_ratio"": 0.9}",14.293057761283654,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""C"": 10, ""epsilon"": 0.01, ""gamma"": 0.1}",14.310907491115877,False
+Ridge,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 10}",14.337955871420471,False
+SVR,Variance only,dq_log_variance,raw,"{""C"": 300, ""epsilon"": 5, ""gamma"": ""scale""}",14.352260611074843,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 1, ""l1_ratio"": 0.5}",14.354072590507275,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 10, ""l1_ratio"": 0.1}",14.371653396598358,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 1, ""l1_ratio"": 0.1}",14.409741888789638,False
+SVR,Variance only,dq_log_variance,log,"{""C"": 0.1, ""epsilon"": 0.05, ""gamma"": ""scale""}",14.42054572820622,False
+SVR,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""C"": 300, ""epsilon"": 5, ""gamma"": ""scale""}",14.464700524726599,False
+RandomForestRegressor,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""max_depth"": 2, ""min_samples_leaf"": 2}",14.479676998170357,False
+SVR,Variance only,dq_log_variance,raw,"{""C"": 100, ""epsilon"": 30, ""gamma"": ""scale""}",14.495427971500272,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 10, ""l1_ratio"": 0.1}",14.506884481806924,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 1, ""l1_ratio"": 0.1}",14.517109057192187,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 0.1, ""l1_ratio"": 0.1}",14.518555263667865,False
+ElasticNet,Variance only,dq_log_variance,raw,"{""alpha"": 10, ""l1_ratio"": 0.1}",14.578208067809204,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 10, ""l1_ratio"": 0.9}",14.59528467341108,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 0.1, ""l1_ratio"": 0.5}",14.626208435129609,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 1, ""l1_ratio"": 0.1}",14.641167261578783,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""C"": 10, ""epsilon"": 0.05, ""gamma"": ""scale""}",14.700560389974774,False
+RandomForestRegressor,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""max_depth"": 2, ""min_samples_leaf"": 4}",14.783422730478838,False
+RandomForestRegressor,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""max_depth"": 3, ""min_samples_leaf"": 4}",14.79008404283455,False
+Ridge,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 100}",14.831567542326093,False
+ElasticNet,Variance only,dq_log_variance,log,"{""alpha"": 1, ""l1_ratio"": 0.1}",14.858902790246844,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 1, ""l1_ratio"": 0.1}",14.858902790246844,False
+RandomForestRegressor,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""max_depth"": 3, ""min_samples_leaf"": 2}",14.92762018986064,False
+RandomForestRegressor,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""max_depth"": 2, ""min_samples_leaf"": 4}",14.970521254971288,False
+RandomForestRegressor,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""max_depth"": 3, ""min_samples_leaf"": 4}",14.977486411164401,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 10, ""l1_ratio"": 0.5}",15.03501306295365,False
+Ridge,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 100}",15.050893716373348,False
+RandomForestRegressor,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""max_depth"": 2, ""min_samples_leaf"": 2}",15.122630446153282,False
+SVR,Variance only,dq_log_variance,raw,"{""C"": 300, ""epsilon"": 30, ""gamma"": ""scale""}",15.13399517064128,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 10, ""l1_ratio"": 0.1}",15.1522730852062,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""C"": 10, ""epsilon"": 0.05, ""gamma"": 0.1}",15.196200195241511,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 100, ""l1_ratio"": 0.1}",15.294890622379102,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 100, ""l1_ratio"": 0.5}",15.342263317322265,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 0.1, ""l1_ratio"": 0.9}",15.379694254956524,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 100, ""l1_ratio"": 0.1}",15.384748685638236,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 100, ""l1_ratio"": 0.1}",15.38918933609274,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,raw,"{""alpha"": 100, ""l1_ratio"": 0.9}",15.410394618513399,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 100, ""l1_ratio"": 0.5}",15.419881889703598,False
+ElasticNet,Variance only,dq_log_variance,raw,"{""alpha"": 100, ""l1_ratio"": 0.1}",15.425655565839994,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 100, ""l1_ratio"": 0.5}",15.428527715794788,False
+ElasticNet,Variance only,dq_log_variance,raw,"{""alpha"": 100, ""l1_ratio"": 0.5}",15.437229120027354,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 1, ""l1_ratio"": 0.1}",15.444806992544354,False
+ElasticNet,Variance only,dq_log_variance,raw,"{""alpha"": 100, ""l1_ratio"": 0.9}",15.453166232908947,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 100, ""l1_ratio"": 0.9}",15.453166232908947,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 1, ""l1_ratio"": 0.5}",15.459514837827179,False
+ElasticNet,Variance only,dq_log_variance,log,"{""alpha"": 1, ""l1_ratio"": 0.5}",15.459514837827179,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 1, ""l1_ratio"": 0.5}",15.459514837827179,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 1, ""l1_ratio"": 0.5}",15.459514837827179,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 1, ""l1_ratio"": 0.5}",15.459514837827179,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,log,"{""alpha"": 1, ""l1_ratio"": 0.9}",15.459514837827179,False
+ElasticNet,Variance only,dq_log_variance,log,"{""alpha"": 1, ""l1_ratio"": 0.9}",15.459514837827179,False
+ElasticNet,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""alpha"": 1, ""l1_ratio"": 0.9}",15.459514837827179,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""alpha"": 1, ""l1_ratio"": 0.9}",15.459514837827179,False
+ElasticNet,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""alpha"": 1, ""l1_ratio"": 0.9}",15.459514837827179,False
+ElasticNet,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 100, ""l1_ratio"": 0.9}",15.466641897872488,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 100, ""l1_ratio"": 0.1}",15.480956752322983,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 100, ""l1_ratio"": 0.5}",15.509204679052734,False
+ElasticNet,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 100, ""l1_ratio"": 0.9}",15.518757977982068,False
+SVR,Variance only,dq_log_variance,log,"{""C"": 1, ""epsilon"": 0.01, ""gamma"": ""scale""}",15.951760160489743,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""C"": 10, ""epsilon"": 0.01, ""gamma"": ""scale""}",16.069817596882892,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""C"": 10, ""epsilon"": 0.05, ""gamma"": ""scale""}",16.35329132648042,False
+SVR,Variance only,dq_log_variance,log,"{""C"": 1, ""epsilon"": 0.05, ""gamma"": ""scale""}",16.503263464671168,False
+Ridge,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 0.01}",16.523417115240193,False
+SVR,Charging + both,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance | dq_band_gap,log,"{""C"": 10, ""epsilon"": 0.01, ""gamma"": 0.1}",16.83794894927776,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""C"": 10, ""epsilon"": 0.01, ""gamma"": 0.1}",17.19035221982169,False
+Ridge,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 0.01}",17.248048559156985,False
+SVR,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,log,"{""C"": 10, ""epsilon"": 0.01, ""gamma"": ""scale""}",17.498494696571708,False
+Ridge,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,raw,"{""alpha"": 0.001}",17.65992567008384,False
+Ridge,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 0.01}",18.04838813032491,False
+SVR,Charging + variance,C1 | C2 | SOC_switch | mean_chargetime | dq_log_variance,log,"{""C"": 10, ""epsilon"": 0.01, ""gamma"": ""scale""}",18.426356366840665,False
+Ridge,Charging + band gap,C1 | C2 | SOC_switch | mean_chargetime | dq_band_gap,raw,"{""alpha"": 0.001}",18.42771608516128,False
+SVR,Variance only,dq_log_variance,log,"{""C"": 10, ""epsilon"": 0.05, ""gamma"": ""scale""}",18.922582429661738,False
+Ridge,Charging only,C1 | C2 | SOC_switch | mean_chargetime,raw,"{""alpha"": 0.001}",19.193552060368003,False
+SVR,Variance only,dq_log_variance,log,"{""C"": 10, ""epsilon"": 0.01, ""gamma"": ""scale""}",20.40444572522063,False

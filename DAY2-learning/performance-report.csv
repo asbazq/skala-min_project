@@ -1,0 +1,10 @@
+﻿구분,추가 비교,MAPE (%),비고
+Train (Batch 1 CV),,15.399253056853507,바깥 5-fold 중첩 그룹 CV 평균
+Valid (Batch 1 Hold-out),,11.872164131917156,고정 Hold-out 7개
+Test (Batch 2),,28.082025617019063,고정 모델; 39개
+,Gap (Train-Valid),-3.5270889249363506,Valid − Train; %p
+,Gap (Valid-Test),16.209861485101907,Batch 2 − Valid; %p
+,Gap (Target-Test),18.98202561701906,Batch 2 − 9.1; %p
+Test (Batch 3),,18.85085435980411,동일 모델; 40개
+,Gap (Batch2-Batch3),-9.231171257214953,Batch 3 − Batch 2; %p
+,Gap (Target-Test),9.75085435980411,Batch 3 − 9.1; %p

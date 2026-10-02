@@ -1,0 +1,94 @@
+{
+  "chosen": {
+    "family": "SVR",
+    "feature_set": "Variance only",
+    "features": [
+      "dq_log_variance"
+    ],
+    "target_transform": "log",
+    "hyperparameters": {
+      "C": 1,
+      "epsilon": 0.01,
+      "gamma": 0.1
+    }
+  },
+  "selection_cv_mape_pct": 8.297508260684015,
+  "train_cv_mape_pct": 15.39925305685349,
+  "train_cv_fold_std_pct": 13.195899754687545,
+  "pooled_oof_metrics": {
+    "mape_pct": 14.605015638870892,
+    "mae_cycles": 103.94075045393583,
+    "rmse_cycles": 150.18260212724297,
+    "n": 29
+  },
+  "evaluation": {
+    "Valid": {
+      "mape_pct": 11.872164131917158,
+      "mae_cycles": 105.76733997593931,
+      "rmse_cycles": 131.1299173193823,
+      "n": 7,
+      "nonpositive_predictions": 0,
+      "life_range": [
+        617.0,
+        1074.0
+      ]
+    },
+    "Test": {
+      "mape_pct": 28.08202561701908,
+      "mae_cycles": 145.27676015324693,
+      "rmse_cycles": 166.8885265903251,
+      "n": 39,
+      "nonpositive_predictions": 0,
+      "life_range": [
+        392.0,
+        1186.0
+      ]
+    },
+    "Batch3-additional": {
+      "mape_pct": 18.85085435980411,
+      "mae_cycles": 245.40974934742053,
+      "rmse_cycles": 398.7337999052941,
+      "n": 40,
+      "nonpositive_predictions": 0,
+      "life_range": [
+        541.0,
+        1935.0
+      ]
+    }
+  },
+  "target_mape_pct": 9.1,
+  "target_achieved": false,
+  "development_life_range": [
+    534.0,
+    1054.0
+  ],
+  "baseline_train_cv_mape_pct": 16.416236409378765,
+  "baseline_evaluation": {
+    "Valid": {
+      "mape_pct": 22.135556961572448,
+      "mae_cycles": 189.42857142857142,
+      "rmse_cycles": 205.3011724968258,
+      "n": 7
+    },
+    "Test": {
+      "mape_pct": 56.46916529063483,
+      "mae_cycles": 276.43589743589746,
+      "rmse_cycles": 291.00960421193963,
+      "n": 39
+    },
+    "Batch3-additional": {
+      "mape_pct": 24.142273928143286,
+      "mae_cycles": 291.6,
+      "rmse_cycles": 410.4596813330147,
+      "n": 40
+    }
+  },
+  "training_n": 29,
+  "fitted_on_all_batch1": false,
+  "elapsed_seconds": 23.784529209136963,
+  "python_version": "3.14.6",
+  "sklearn_version": "1.9.0",
+  "no_model_or_feature_change_after_test": true,
+  "prior_batch2_and_batch3_eda_disclosed": true,
+  "train_cv_definition": "Full model/feature/hyperparameter selection procedure in inner CV, outer held-out MAPE averaged. Outer folds may select different models."
+}

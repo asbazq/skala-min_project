@@ -1,0 +1,24 @@
+{
+  "reference_notebook": "/Users/jang/Downloads/ML_5)_Timeseries.ipynb",
+  "purpose": "MAT-to-evaluation notebook; no pre-created CSV/GZ/split manifest required",
+  "notebook_cells": 109,
+  "executed_code_cells": 54,
+  "maximum_code_cell_lines": 23,
+  "candidate_count": 340,
+  "predictions_checked": 86,
+  "split_audits": 23,
+  "same_chosen_model": true,
+  "same_metrics_and_predictions": true,
+  "train_cv_mape_pct": 15.399253056853507,
+  "evaluation_scores": {
+    "Valid": 11.872164131917156,
+    "Test": 28.082025617019063,
+    "Batch3-additional": 18.85085435980411
+  },
+  "generated_features_match_reference": true,
+  "generated_split_matches_reference": true,
+  "clean_directory_full_execution_passed": true,
+  "clean_run_directory": "/Users/jang/Documents/Codex/2026-10-01/goe/work/raw-only-clean-run",
+  "required_starting_inputs": "3 MAT originals only",
+  "h5py_version": "3.16.0"
+}

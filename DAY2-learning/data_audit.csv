@@ -1,0 +1,25 @@
+cell_id,action,reason
+b1c0,keep_raw_EDA_exclude_model,continuation recorded elsewhere; this file alone does not provide complete life
+b1c1,keep_raw_EDA_exclude_model,continuation recorded elsewhere; this file alone does not provide complete life
+b1c2,keep_raw_EDA_exclude_model,continuation recorded elsewhere; this file alone does not provide complete life
+b1c3,keep_raw_EDA_exclude_model,continuation recorded elsewhere; this file alone does not provide complete life
+b1c4,keep_raw_EDA_exclude_model,continuation recorded elsewhere; this file alone does not provide complete life
+b1c8,keep_raw_EDA_exclude_model,author identifies EOL not reached
+b1c10,keep_raw_EDA_exclude_model,author identifies EOL not reached
+b1c12,keep_raw_EDA_exclude_model,author identifies EOL not reached
+b1c13,keep_raw_EDA_exclude_model,author identifies EOL not reached
+b1c22,keep_raw_EDA_exclude_model,author identifies EOL not reached
+b2c22,exclude_target_eda_and_model,missing or invalid cycle_life
+b2c23,exclude_target_eda_and_model,missing or invalid cycle_life
+b2c35,exclude_target_eda_and_model,missing or invalid cycle_life
+b2c36,exclude_target_eda_and_model,missing or invalid cycle_life
+b2c37,exclude_target_eda_and_model,missing or invalid cycle_life
+b2c38,exclude_target_eda_and_model,missing or invalid cycle_life
+b2c39,exclude_target_eda_and_model,missing or invalid cycle_life
+b2c40,exclude_target_eda_and_model,missing or invalid cycle_life
+b3c2,keep_raw_EDA_exclude_model,author excludes noisy/incomplete cell
+b3c23,exclude_target_eda_and_model,missing or invalid cycle_life
+b3c32,exclude_target_eda_and_model,missing or invalid cycle_life
+b3c37,keep_raw_EDA_exclude_model,author excludes noisy/incomplete cell
+b3c42,keep_raw_EDA_exclude_model,author excludes noisy/incomplete cell
+b3c43,keep_raw_EDA_exclude_model,author excludes noisy/incomplete cell

@@ -1,0 +1,6 @@
+fold,fit_n,held_n,MAPE (%),선택 모델,입력 조합,타깃
+1,23,6,7.197421605358157,SVR,Variance only,raw
+2,23,6,9.822438384009011,SVR,Variance only,raw
+3,23,6,7.249214771188882,Ridge,Charging only,log
+4,23,6,14.295052345362524,RandomForestRegressor,Variance only,log
+5,24,5,38.43213817834896,Ridge,Charging only,log

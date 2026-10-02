@@ -1,0 +1,18 @@
+{
+  "purpose": "align rubric explanations without changing training",
+  "day2_code_and_saved_outputs_unchanged": true,
+  "day1_numerical_computation_unchanged": true,
+  "protected_result_file_hashes": {
+    "DAY2-results-summary.json": "9c31c63bf4c51a4217cfb925e6afda76c4d2ac5b66b727d93198d9c0e4094a40",
+    "DAY2-performance-report-batch3.csv": "ce44689560493d9f450394c5fc6f5579290cf25d2b783a36d20e32db7defc3ca",
+    "DAY2-learning/best-model.joblib": "eee3e72996956adf917bf69ce49d4a2590b040f420983b1a7284db90a0f8a5e7",
+    "DAY2-learning/candidate-results.csv": "8c9d98d957201b01ea457640aa9c49d6fad45027997a63d358653392fb43c49b",
+    "DAY2-learning/evaluation-predictions.csv": "04ea00f686494cb384b77bcf2d071947a2a9420f828ce3efaee963ea04f37943",
+    "DAY2-learning/DAY2-split-manifest.csv": "14c6b98437657c0a084f9e356fa136a834431c91d285c95942c013520cb27e9f"
+  },
+  "gap_direction_consistent": "later error minus earlier error",
+  "deferred_features_not_claimed_performance_tested": true,
+  "train_cv_defined_as_model_selection_procedure": true,
+  "current_notebook_cells": 114,
+  "current_code_cells": 57
+}

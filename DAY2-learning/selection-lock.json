@@ -1,0 +1,50 @@
+{
+  "chosen": {
+    "family": "SVR",
+    "feature_set": "Variance only",
+    "features": [
+      "dq_log_variance"
+    ],
+    "target_transform": "log",
+    "hyperparameters": {
+      "C": 1,
+      "epsilon": 0.01,
+      "gamma": 0.1
+    }
+  },
+  "fit_cells": [
+    "b1c9",
+    "b1c11",
+    "b1c14",
+    "b1c15",
+    "b1c16",
+    "b1c17",
+    "b1c18",
+    "b1c19",
+    "b1c20",
+    "b1c21",
+    "b1c23",
+    "b1c24",
+    "b1c25",
+    "b1c26",
+    "b1c27",
+    "b1c28",
+    "b1c29",
+    "b1c30",
+    "b1c31",
+    "b1c32",
+    "b1c33",
+    "b1c34",
+    "b1c35",
+    "b1c36",
+    "b1c37",
+    "b1c42",
+    "b1c43",
+    "b1c44",
+    "b1c45"
+  ],
+  "selection_cv_mape_pct": 8.297508260683985,
+  "model_sha256": "eee3e72996956adf917bf69ce49d4a2590b040f420983b1a7284db90a0f8a5e7",
+  "stage": "before-evaluation",
+  "purpose": "learning replay of the original experiment"
+}
